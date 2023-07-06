@@ -16,7 +16,7 @@ class HTV(TemplateView):
 
 
 class booking(TemplateView):
-    template_name = "reservation.html"g
+    template_name = "reservation.html"
     def post(self,request):
         fname=request.POST.get("fname")
         lname = request.POST.get("lname")
