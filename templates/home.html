@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cta %}
+<div class="container hero">
+        <div class="column">
+
+                <h1>انجام انواع لیزرها</h1>
+
+            <a href="{% url 'appointment' %}" style="background-color:#0CF ;color:white" class="btn btn btn-lg action-button" type="button">رزرو نوبت</a>
+
+
+        </div>
+    </div>
+
+{% endblock cta %}
+
+{% block content %}
+
+
+
+
+<section id="services" id ="services">
+  <div class=" text-center py-5 mb-5">
+      <div class="container">
+        <h1 class="fw-light text-black">انواع لیزرها</h1>
+
+      </div>
+    </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/hifo.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">هایفو</h5>
+            <div class="card-text text-black-50">افزایش استحکام و جوانسازی</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/co2.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">CO2فرکشنال</h5>
+            <div class="card-text text-black-50">لایه برداری و ترمیم</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/nid.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">میکرونیدلینگ اسکارلت</h5>
+            <div class="card-text text-black-50">رفع چین و چروک</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/mig.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">پلاسمیج</h5>
+            <div class="card-text text-black-50">ترمیم پلک</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  
+  </div>
+</section>
+
+
+<section class="container py-5"  style="margin-block:200px;" id="team">
+    <div class="column text-center ">
+        <div class="col-lg-12 ">
+            <h1 class="display10">پزشک</h1>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- Team item -->
+            <div class="col-xl-5 col-sm-6 mb-10">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/doctor.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">دکتر اصحاب یمین</h5>
+                    <span class="small text-uppercase text-muted">جراح پلاستیک</span>
+                </div>
+            </div><!-- End -->
+
+
+</section><!-- End -->
+
+
+<section id="contact" class="card m-4 p-4">
+    <div class="container">
+        <div class="row text-center">
+          
+            <div class="col-sm-6">
+            <div class="contact-detail-box">
+
+              <h4>تلفن مطب</h4>
+              <abbr title="Phone"></abbr>09129990000<br>
+
+            </div>
+          </div><!-- end col -->
+  
+          <div class="col-sm-6">
+            <div class="contact-detail-box">
+
+              <h4>آدرس مطب</h4>
+  
+              <address>
+              <br>کرمان،خیابان فردوسی،ساختمان آراد<br>
+            </address>
+            </div>
+          </div><!-- end col -->
+  
+  
+  
+
+</section>
+
+
+{% endblock content %}
